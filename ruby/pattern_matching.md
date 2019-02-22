@@ -1,4 +1,4 @@
-### Pattern Matching in Ruby
+# Pattern Matching in Ruby
 
 I use Ruby on daily basis, but as many people I've looked into Elixir.
 Two concepts from Elixir really stuck in my head:
@@ -6,7 +6,7 @@ Two concepts from Elixir really stuck in my head:
 1. tuples
 2. pattern matching
 
-#### Tuples
+## Tuples
 This one is easy if you don't mind using basic data structures instead of objects.
 Basically instead of returning a result object from your services you can just use an array like so:
 
@@ -26,7 +26,7 @@ from your services.
 Sticking to one convention can allow you to craft neat ways of handling different outcomes.
 
 
-#### Implementing Pattern Matching
+## Implementing Pattern Matching
 
 Pattern matchingesque behaviour can be achieved in a few ways:
 1. using [dry-matcher](https://dry-rb.org/gems/dry-matcher/)
@@ -36,7 +36,7 @@ Pattern matchingesque behaviour can be achieved in a few ways:
 
 The first two points are more interesting so i'll just focus on them.
 
-#### Dry-matcher
+## Dry-matcher
 
 I was aware of [dry-matcher](https://dry-rb.org/gems/dry-matcher/) for some time,
 but was a bit hesitant (wrongly) to actually dive into it and take a closer look how it works.
@@ -66,7 +66,7 @@ While this may look like it requires quite a lot code it is easily extendable an
 a great initiative in Ruby world.
 
 
-#### Case with matcher objects implementing `===` operator
+## Case with matcher objects implementing `===` operator
 
 I was never a fan of `case`/`switch` statements, but with this i came to like them a bit.
 
@@ -111,6 +111,6 @@ Here we have a few options:
 ```
 
 
-### The end
+# The end
 
 Hope you found this useful or at least interesting, feel free to let me know by sending me an email.
