@@ -5,7 +5,7 @@
 Dry-rb provides us with a set of useful gems, yet there seem to be an opinion they are more advanced and are suitable for more complex applications.
 Truth is that they are useful for app of any size and complexity and can help with keeping a maintainable, easy to extend and test codebase.
 
-(This repo)[https://github.com/smnkrt/rails-dry-poc] demonstrates a simple way of using Dependency Injection related gems:
+[This repo](https://github.com/smnkrt/rails-dry-poc) demonstrates a simple way of using Dependency Injection related gems:
 
 - [dry-auto_inject](https://dry-rb.org/gems/dry-auto_inject)
 - [dry-container](https://dry-rb.org/gems/dry-container)
