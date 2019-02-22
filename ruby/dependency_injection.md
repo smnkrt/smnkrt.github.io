@@ -1,4 +1,4 @@
-# Dependency Injection in Rails with Dry-rb gems
+# Dependency Injection in Rails
 
 # About
 
