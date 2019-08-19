@@ -109,10 +109,10 @@ Here we have a few options:
         end
 ```
 ## Other options and ideas
-  - https://github.com/egonSchiele/contracts.ruby
-  - https://github.com/baweaver/qo
-  - https://zverok.github.io/blog/2018-06-26-pattern-matching.html
-  - https://dev.to/katafrakt/ruby-pattern-matching-second-impressions-3hkk
+  - [https://github.com/egonSchiele/contracts.ruby](https://github.com/egonSchiele/contracts.ruby)
+  - [https://github.com/baweaver/qo](https://github.com/baweaver/qo)
+  - [https://zverok.github.io/blog/2018-06-26-pattern-matching.html](https://zverok.github.io/blog/2018-06-26-pattern-matching.html)
+  - [https://dev.to/katafrakt/ruby-pattern-matching-second-impressions-3hkk](https://dev.to/katafrakt/ruby-pattern-matching-second-impressions-3hkk)
 
 ## The end
 
