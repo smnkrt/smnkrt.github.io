@@ -22,8 +22,8 @@ Basically instead of returning a result object from your services you can just u
 ```
 
 If you stick to this convention you can end up with a simple and light weight way of passing data and metadata
-from your services.  
-Sticking to one convention can allow you to craft neat ways of handling different outcomes.  
+from your services. Sticking to one convention can allow you to craft neat ways of handling different outcomes
+without adding additional dependencies. 
 
 ## Implementing Pattern Matching
 
@@ -108,11 +108,17 @@ Here we have a few options:
         when runtime_error then "RuntimeError"
         end
 ```
-
-## Other options:
+## Other options and ideas
+  - https://github.com/egonSchiele/contracts.ruby
   - https://github.com/baweaver/qo
-  - waiting for Ruby 2.7
+  - https://zverok.github.io/blog/2018-06-26-pattern-matching.html
+  - https://dev.to/katafrakt/ruby-pattern-matching-second-impressions-3hkk
 
 ## The end
 
 Hope you found this useful or at least interesting, feel free to let me know.
+
+## PS
+
+You can also wait for pattern matching in Ruby 2.7.
+
