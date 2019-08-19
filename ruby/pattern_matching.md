@@ -1,13 +1,13 @@
-# Pattern Matching in Ruby
+## Pattern Matching in Ruby
 
-I use Ruby on daily basis, but as many people I've looked into Elixir.
+I use Ruby on daily basis, but as many people I've looked into Elixir.  
 Two concepts from Elixir really stuck in my head:
 
   1. tuples
   2. pattern matching
 
 ## Tuples
-This one is easy if you don't mind using basic data structures instead of objects.
+This one is easy if you don't mind using basic data structures instead of objects.  
 Basically instead of returning a result object from your services you can just use an array like so:
 
 ```ruby
@@ -22,17 +22,16 @@ Basically instead of returning a result object from your services you can just u
 ```
 
 If you stick to this convention you can end up with a simple and light weight way of passing data and metadata
-from your services.
-Sticking to one convention can allow you to craft neat ways of handling different outcomes.
-
+from your services.  
+Sticking to one convention can allow you to craft neat ways of handling different outcomes.  
 
 ## Implementing Pattern Matching
 
 Pattern matchingesque behaviour can be achieved in a few ways:
-1. using [dry-matcher](https://dry-rb.org/gems/dry-matcher/)
-2. using case with matcher objects implementing `===` operator
-3. using plain case
-4. using guard clauses
+  1. using [dry-matcher](https://dry-rb.org/gems/dry-matcher/)
+  2. using case with matcher objects implementing `===` operator
+  3. using plain case
+  4. using guard clauses
 
 The first two points are more interesting so i'll just focus on them.
 
@@ -110,7 +109,10 @@ Here we have a few options:
         end
 ```
 
+## Other options:
+  - https://github.com/baweaver/qo
+  - waiting for Ruby 2.7
 
-# The end
+## The end
 
-Hope you found this useful or at least interesting, feel free to let me know by sending me an email.
+Hope you found this useful or at least interesting, feel free to let me know.
