@@ -66,7 +66,7 @@ While this may look like it requires quite a lot code it is easily extendable an
 a great initiative in Ruby world.
 
 
-## Case with matcher objects implementing `===` operator
+## Matcher objects implementing `===` operator
 
 I was never a fan of `case`/`switch` statements, but with this i came to like them a bit.
 
