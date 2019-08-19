@@ -3,8 +3,8 @@
 I use Ruby on daily basis, but as many people I've looked into Elixir.
 Two concepts from Elixir really stuck in my head:
 
-1. tuples
-2. pattern matching
+  1. tuples
+  2. pattern matching
 
 ## Tuples
 This one is easy if you don't mind using basic data structures instead of objects.
