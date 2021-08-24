@@ -1,27 +1,24 @@
 <html>
-  <head>
-    <title>Tracking API test bench</title>
-  </head>
+<head>
+  <title>Page with manually added script</title>
+
+  <script>
+    (function(ss,ex){
+      window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));};
+      window.ldfdr('cfg','trackingCookieDurationDays',15,ss);
+      window.ldfdr('cfg','customArgument',15,ss);
+//      window.ldfdr('cfg','lfaCookieEnabled',true,ss);
+
+      (function(d,s){
+        fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; setTimeout(function(){fs.parentNode.insertBefore(cs,fs)},1); }; ce('https://sc-polon-dev.s3.amazonaws.com/lftracker_v1_123456.js');
+      })(document,'script');
+    })('lAxoEaKdNOA8OYGd');
+  </script>
+</head>
+
   <body>
 
-    
-<script>
-  (function(ss,ex){
-    window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments).concat(ss));};
-    <%= "window.ldfdr('cfg','enableAutoTracking',#{locals[:tracking_allowed]});" unless locals[:tracking_allowed].nil? %>
-    <%= "window.ldfdr('cfg','trackingCookieDurationDays',#{locals[:cookie_duration_days]});" unless locals[:cookie_duration_days].nil? %>
-    (function(d, s){
-      fs=d.getElementsByTagName(s)[0];
-      function ce(src){
-        var cs=d.createElement(s);
-        cs.src=src;
-        cs.async=true;
-        fs.parentNode.insertBefore(cs,fs);
-      };
-      ce('https://sc-polon-dev.s3.amazonaws.com/lftracker_v1_123456.js');
-    })(document,'script');
-  })('<%= locals[:script_hash] %>');
-</script>
+   
 
 
   </body>
