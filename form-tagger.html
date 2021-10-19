@@ -23,7 +23,7 @@
 
     var iframes = document.getElementsByTagName("iframe");
     var iframeForms = Array.prototype.slice.call(iframes).map(function(iframe){
-      if (iframe.src.startsWith(origin)) {
+      if (!iframe.src.startsWith("http") || iframe.src.startsWith(origin)) {
         return iframe.contentWindow.document.getElementsByTagName("form");
       }
       return
