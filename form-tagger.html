@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<form>
+  <label for="title">title:</label><br>
+  <input type="text" id="title" name="title"><br>
+</form>
+<p>copy</p>
+
+<iframe src="iframe-form-same-origin.html" frameborder="2"></iframe>
+<p>some copy</pr>
+  <iframe src="https://smnkrt.github.io/test.html" frameborder="2">
+  </iframe>
+
+  <script>
+    var origin = window.origin;
+
+    var onPageForms = document.getElementsByTagName("form");
+
+    var iframes = document.getElementsByTagName("iframe");
+    var iframeForms = Array.prototype.slice.call(iframes).map(function(iframe){
+      if (iframe.startsWith(origin)) {
+        return iframe.contentWindow.document.getElementsByTagName("form");
+      }
+      return
+    }).filter(e => e);
+
+    var arr = [].concat(
+      Array.prototype.slice.call(onPageForms),
+      Array.prototype.slice.call(iframeForms)
+    )
+    arr.forEach(el => { el.style.backgroundColor = "green" })
+  </script>
+</body>
+</html>
