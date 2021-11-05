@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Page with manually added script</title>
+  <script>
+    (function(ss, ex) {
+      window.ldfdr = window.ldfdr || function() {
+        (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments));
+      };
+      (function(d, s) {
+        fs = d.getElementsByTagName(s)[0];
+
+        function ce(src) {
+          var cs = d.createElement(s);
+          cs.src = src;
+          cs.async = 1;
+          fs.parentNode.insertBefore(cs, fs);
+        };ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js');
+      })(document, 'script');
+    })('ywVkO4XyRrzaZ6Bj', 'debug');
+  </script>
+</head>
+<body>
+
+<h2>Form with attributes</h2>
+<form action="/multiple/123456/plugin_form_tracking"
+      class="some-class other-class"
+      id="form-with-attributes">
+  <span>Some text</span>
+  <input name="email2" type="email"></input>
+
+  <input name="name" type="text" value="ignored"></input>
+  <input name="name" type="text" value="名前"></input>
+
+  <%#
+  If a form contains an 'action' input it'll break "form.action" function.
+  Let's add this input here to make sure that we're collecting correct value.
+  Issue: https://github.com/Leadfeeder/issue-tracker/issues/16638
+  %>
+  <input name="action" value="abc"></input>
+
+  <input name="invalid-type" type="rubbish" value="abc:%de"></input>
+
+  <input name="single-choice" type="radio" value="1">1</input>
+  <input name="single-choice" type="radio" value="2">2</input>
+
+  <input name="secret" type="hidden" value="2"/>
+
+  <textarea name="area"></textarea>
+
+  <button type="submit">Go 2</button>
+</form>
+
+</body>
+</html>
