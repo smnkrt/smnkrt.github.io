@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <title>Page with manually added script</title>
+      <script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('Xbp1oaEGAdq7EdVj'); </script>
+   </head>
+   <body>
+      <form>
+         <input name="email" type="text"></input>
+         <button type="submit">Go</button>
+      </form>
+      <br>
+      <br><br>
+      <iframe src="iframe-form-same-origin.html" frameborder="2"></iframe>
+      <br>
+       <br><br>
+      <form name="loginform" id="loginform" method="get">
+         <p class="login-username">
+            <label for="user_login">Email</label>
+            <input type="text" name="log" id="user_login" class="input" value="" size="20">
+         </p>
+         <p class="login-password">
+            <label for="user_pass">Password</label>
+            <input type="password" name="pwd" id="user_pass" class="input" value="" size="20">
+         </p>
+         <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked"> Remember Me</label></p>
+         <p class="login-submit">
+            <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Login">
+            <input type="hidden" name="redirect_to" value="/reports/">
+         </p>
+      </form>
+
+      <a href="/file.pdf">file.pdf</a> <br>
+      <a href="/file.png">file.png</a> <br>
+
+      <a href="https://smnkrt.github.io/file.pdf">https://smnkrt.github.io/file.pdf</a> <br>
+      <a href="https://smnkrt.github.io/file_with_param.pdf?source=test">https://smnkrt.github.io/file_with_param.pdf?source=test</a> <br>
+      <a href="https://smnkrt.github.io/file.png">https://smnkrt.github.io/file.png</a> <br>
+
+      <a href="https://otherwebsite.io/other-file.pdf">https://otherwebsite.io/other-file.pdf</a> <br>
+      <a href="https://otherwebsite.io/file.pdf?source=test">https://otherwebsite.io/file.pdf?source=test</a> <br>
+
+      <a href="https://otherwebsite.io/file.png">https://otherwebsite.io/file.png</a> <br>
+   </body>
+</html>
