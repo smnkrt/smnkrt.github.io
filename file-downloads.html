@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+<!--  <script>-->
+<!--    window.ldfdr = window.ldfdr || function() {-->
+<!--      (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments));-->
+<!--    };-->
+<!--  </script>-->
+<!--  <script src="polonium.js"></script>-->
+
+  <script>
+    (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('ywVkO4XyRrzaZ6Bj');
+
+    window.ldfdr('cfg', 'filesEnabled', true);
+  </script>
+</head>
+<body>
+
+<script>
+  function addDynamicLink() {
+    var link = document.createElement("a");
+    var linkText = document.createTextNode("Dynamic Link");
+    link.href = "https://smnkrt.github.io/file-dynamic.pdf"
+    link.appendChild(linkText);
+    document.body.appendChild(link);
+  }
+</script>
+
+<button onclick="addDynamicLink()">Add Dynamic Link</button>
+
+<a href="/file.pdf">file.pdf</a> <br>
+<a href="/file.png">file.png</a> <br>
+
+<a href="https://smnkrt.github.io/file.pdf">https://smnkrt.github.io/file.pdf</a>
+<br>
+<a href="https://smnkrt.github.io/file_with_param.pdf?source=test">https://smnkrt.github.io/file_with_param.pdf?source=test</a>
+<br>
+<a href="https://smnkrt.github.io/file.png">https://smnkrt.github.io/file.png</a>
+<br>
+
+<a href="https://otherwebsite.io/other-file.pdf">https://otherwebsite.io/other-file.pdf</a>
+<br>
+<a href="https://otherwebsite.io/file.pdf?source=test">https://otherwebsite.io/file.pdf?source=test</a>
+<br>
+
+<a href="https://otherwebsite.io/file.png">https://otherwebsite.io/file.png</a>
+<br>
+
+</body>
+</html>
